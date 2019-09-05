@@ -1,0 +1,91 @@
+<html>
+  <meta charset="UTF-8"> 
+  <head>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+    <body>
+      
+      <div id="titulopagina"> 
+        <span><b>SIMULADOR DE INVERSIÓN</b></span><output class="output" type="number" id="titulopagina" placeholder="0">
+      </div>
+      
+      
+      <div id="tituloparametros"> 
+            <span><b>PARÁMETROS DE LA INVERSIÓN</b></span><output class="output" type="number" id="tituloparametros" placeholder="0">
+          </div>
+
+      <div id="inputs">
+         <div>
+            <span>Rendimiento Semanal: 2%</span><th class="input" type="number" id="interest" placeholder="2">
+        </div>
+    
+        <div>
+            <span>Depósito USD:</span><input class="input" type="number" id="principle" placeholder="0">
+        </div>
+    
+        <div>
+            <span>Número Semanas</span><input class="input" type="number" id="compound-freq" placeholder="0">
+        </div>
+
+      
+      <div id="button-wrapper"> 
+        <button id="calculate">Simular</button>
+      </div>
+
+    </div>
+
+    <div id="titulooutputs"> 
+        <span><b>RESULTADO DE LA INVERSIÓN</b></span><output class="output" type="number" id="titulooutputs" placeholder="0">
+      </div>
+
+    <div id="outputs"> 
+        <p id="output1"> </p>
+        <p id="output2"> </p>
+        <p id="output3"> </p>
+    </div>
+
+
+
+    <div id="titulografico"> 
+      <span><b>UTILIDAD POR SEMANAS</b></span><output class="output" type="number" id="titulografico" placeholder="0">
+    </div>
+
+
+
+    <div id="chart-wrapper">
+        <canvas id="chart"></canvas>
+      </div>
+
+
+      <div id="titulotabla"> 
+          <span><b>DETALLE POR SEMANA</b></span><output class="output" type="number" id="titulotabla" placeholder="0">
+        </div>
+
+
+
+    <div id="table-wrapper">
+      <table id="table">
+        <thead>
+          <tr>
+            <th>Semana</th>
+            <th>Ganancia</th>
+            <th>Comisión</th>
+            <th>Balance</th>
+          </tr>          
+        </thead>
+        <tbody id="table-body">
+
+        </tbody>
+      </table>
+    </div>
+    
+
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
+    <script type="text/javascript" src="chart.js"></script>
+    <script type="text/javascript" src="compound-interest.js"></script>
+    <script type="text/javascript" src="table.js"></script> 
+    <script type="text/javascript" src="app.js"></script>
+
+  </body>
+</html>
