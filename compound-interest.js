@@ -4,7 +4,7 @@ const calculateYears = (function () {
   // compoundFreq - 1 for yearly, 12 for monthly, 52 for weekly... etc
 
   function calculate (principle, compoundFreq, numberOfYears) {
-    const decimalInterest = 2 / 100
+    const decimalInterest = 1 / 100
     const rn = 1 + (decimalInterest)
     const cf = numberOfYears
     const compoundedInterest = principle * rn
