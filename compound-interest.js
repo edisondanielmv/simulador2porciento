@@ -4,7 +4,7 @@ const calculateYears = (function () {
   // compoundFreq - 1 for yearly, 12 for monthly, 52 for weekly... etc
 
   function calculate (principle, compoundFreq, numberOfYears) {
-    const decimalInterest = 1 / 100
+    const decimalInterest = 2 / 100
     const rn = 1 + (decimalInterest)
     const cf = numberOfYears
     const compoundedInterest = principle * rn
@@ -28,7 +28,7 @@ const calculateYears = (function () {
       return yearsData.concat({
         yearInterest: compoundValue - newPrinciple,
         yearDeposits: monthlyDeposit,
-        totalDeposits: "1%",
+        totalDeposits: "2%",
         totalInterest: Math.round(compoundValue - principle),
         year: index + 1,
         year2: (compoundValue*0.3 - newPrinciple*0.3).toFixed(2),
