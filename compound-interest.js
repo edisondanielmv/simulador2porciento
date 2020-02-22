@@ -28,7 +28,7 @@ const calculateYears = (function () {
       return yearsData.concat({
         yearInterest: compoundValue - newPrinciple,
         yearDeposits: monthlyDeposit,
-        totalDeposits: "2%",
+        totalDeposits: "1%",
         totalInterest: Math.round(compoundValue - principle),
         year: index + 1,
         year2: (compoundValue*0.3 - newPrinciple*0.3).toFixed(2),
